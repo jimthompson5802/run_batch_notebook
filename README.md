@@ -17,9 +17,12 @@ When running in batch mode, parameters required by the notebook are passed in as
 * Open `train_model.ipynb`.  Run this notebook interactively.  Close the notebook.
 * From the terminal prompt run these commands to see the `train_model.ipynb` notebook execute in batch mode.
 ```
-jupyter nbconvert --to script --stdout train_model.ipynb | python - --training_fp ./data/train_13.csv --model_dir ./models/model_13 --plot_dir ./plots/plot_13
-jupyter nbconvert --to script --stdout train_model.ipynb | python - --training_fp ./data/train_23.csv --model_dir ./models/model_23 --plot_dir ./plots/plot_23
-jupyter nbconvert --to script --stdout train_model.ipynb | python - --training_fp ./data/train_42.csv --model_dir ./models/model_42 --plot_dir ./plots/plot_42
+jupyter nbconvert --to script --stdout train_model.ipynb | \
+  python - --training_fp ./data/train_13.csv --model_dir ./models/model_13 --plot_dir ./plots/plot_13
+jupyter nbconvert --to script --stdout train_model.ipynb | \
+  python - --training_fp ./data/train_23.csv --model_dir ./models/model_23 --plot_dir ./plots/plot_23
+jupyter nbconvert --to script --stdout train_model.ipynb | \
+  python - --training_fp ./data/train_42.csv --model_dir ./models/model_42 --plot_dir ./plots/plot_42
 ```
 
 ## Notebook coding considerations
