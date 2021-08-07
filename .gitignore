@@ -1,0 +1,15 @@
+# data directory
+data
+
+# models directory
+models
+
+# generated plot directory
+plots
+
+# notebook checkpoint dir
+.ipynb_checkpoints
+
+# platform specific
+.Trash*
+.DS_Store
